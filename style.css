@@ -1,0 +1,91 @@
+/********** RESET **********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/********** STYLE **********/
+body {
+  font-family: monospace;
+}
+
+main {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+/********** HEADER **********/
+
+header {
+  position: sticky;
+  padding: 20px 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 60px;
+}
+
+a,
+li {
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*************** FOOTER ***************/
+footer {
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 18px;
+}
+
+/*************** GRID & FLEX ***************/
+.flexdiv {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.lineuptext {
+  margin-top: 530px;
+}
+
+/*************** KNAP ***************/
+.knap a {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 50px;
+  background-color: #4ea2fa;
+  color: black;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.knap a:hover {
+  animation: fadelight_kf 5s linear infinite both;
+}
+
+/*************** DT & DD ***************/
+
+dt {
+  font-weight: 700;
+}
+dd {
+  margin-inline-start: 40px;
+}
