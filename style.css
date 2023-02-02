@@ -21,11 +21,16 @@ main {
   margin-inline: auto;
 }
 
+/********** TEKST **********/
+p {
+  font-size: 1rem;
+}
+
 /********** HEADER **********/
 
 header {
   position: sticky;
-  padding: 20px 10px;
+  padding: 40px 10px;
 }
 
 nav ul {
@@ -43,6 +48,25 @@ li {
   list-style: none;
 }
 
+/*************** IMG ***************/
+.grid_1_1 img {
+  border: solid;
+  border-color: #4ea2fa;
+  border-width: 7px;
+}
+
+/*************** DISCOUNT ***************/
+.discount {
+  background-color: rgba(255, 0, 0, 0.55);
+  padding: 10px;
+}
+/*************** SOLD OUT ***************/
+.soldout {
+  opacity: 30%;
+  background-color: rgb(98, 98, 98);
+  padding: 10px;
+}
+
 /*************** FOOTER ***************/
 footer {
   text-align: center;
@@ -56,14 +80,21 @@ footer {
   justify-content: center;
   gap: 100px;
 }
+.categories {
+  border: solid;
+  padding: 30px;
+  border-radius: 15%;
+  background-color: rgb(174, 215, 239);
+}
 
 .grid_1_1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .lineuptext {
-  margin-top: 530px;
+  margin-top: 423px;
+  margin-left: 45px;
 }
 
 /*************** KNAP ***************/
