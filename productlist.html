@@ -19,56 +19,23 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="flexdiv">
-            <div>
-                <a href="product.html">
-                    <div>
-                        <img src="tshirt.webp" alt="tshirt">
-                        <p class="soldouttext"></p>
-                        <h2>tshirts</h2>
-                        <p>en unik kategori.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="soldout">
-                <a href="product.html">
-                    <div>
-                        <img src="tshirt.webp" alt="tshirt">
-                        <p class="soldouttext"></p>
-                        <h2>tshirts</h2>
-                        <p>UDSOLGT</p>
-                    </div>
-                </a>
-            </div>
-            <div class="discount">
-                <a href="product.html">
-                    <div>
-                        <img class="discount" src="tshirt.webp" alt="tshirt">
-                        <p class="soldouttext"></p>
-                        <h2>tshirts</h2>
-                        <p>20% DISCOUNT</p>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="product.html">
-                    <div>
-                        <img src="tshirt.webp" alt="tshirt">
-                        <p class="soldouttext"></p>
-
-                        <h2>tshirts</h2>
-                        <p>til dig der kan lide at have tøj på.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+    <main class="grid_1_1">
+        <template id="smallProductTemplate">
+            <article class="smallProduct">
+                <img class="smallimg" src="tshirt.webp" alt="tshirt">
+                <h2>tshirts</h2>
+                <p>article type</p>
+                <p><span class="price">price</span> DKK</p>
+                <p class="showDiscount"> <span class="discountprocent"></span></p>
+                <a href="product.html">read more</a>
+            </article>
+        </template>
     </main>
     <footer>
         <p>&copy; 2023 matildemona</p>
 
     </footer>
-
+    <script src="js/productlist.js"></script>
 </body>
 
 </html>

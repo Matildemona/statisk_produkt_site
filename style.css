@@ -47,24 +47,37 @@ li {
   text-decoration: none;
   list-style: none;
 }
+article a {
+  color: blue;
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
 
 /*************** IMG ***************/
-.grid_1_1 img {
-  border: solid;
-  border-color: #4ea2fa;
-  border-width: 7px;
+
+.smallimg {
+  width: 50%;
 }
 
 /*************** DISCOUNT ***************/
-.discount {
-  background-color: rgba(255, 0, 0, 0.55);
+.discountp {
+  width: 60px;
+  background: rgb(255, 0, 0);
   padding: 10px;
+  color: white;
 }
+
 /*************** SOLD OUT ***************/
+.soldout::before {
+  content: "Sold Out";
+  position: absolute;
+  background: white;
+  color: black;
+  padding: 1rem;
+}
+
 .soldout {
-  opacity: 30%;
-  background-color: rgb(98, 98, 98);
-  padding: 10px;
+  opacity: 50%;
 }
 
 /*************** FOOTER ***************/
@@ -72,29 +85,6 @@ footer {
   text-align: center;
   padding-bottom: 10px;
   padding-top: 18px;
-}
-
-/*************** GRID & FLEX ***************/
-.flexdiv {
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-}
-.categories {
-  border: solid;
-  padding: 30px;
-  border-radius: 15%;
-  background-color: rgb(174, 215, 239);
-}
-
-.grid_1_1 {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-
-.lineuptext {
-  margin-top: 423px;
-  margin-left: 45px;
 }
 
 /*************** KNAP ***************/
@@ -119,4 +109,32 @@ dt {
 }
 dd {
   margin-inline-start: 40px;
+}
+
+/*************** GRID & FLEX ***************/
+.smallProduct {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexdiv {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.categories {
+  padding: 30px;
+  background-color: rgb(221, 218, 218);
+}
+
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.lineuptext {
+  margin-top: 671px;
+  margin-left: 45px;
 }
