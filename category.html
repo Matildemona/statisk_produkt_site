@@ -19,46 +19,33 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="flexdiv">
-            <div>
+    <main class="flexdiv">
+        <template id="categoryTemplate">
+            <article class="smallProduct">
                 <a href="productlist.html">
-                    <div class="categories">
-                        <h2>tshirts</h2>
-                        <p>beskrivelse</p>
-                    </div>
+                    <h2 class="categories">CATEGORY</h2>
                 </a>
-            </div>
-            <div>
-                <a href="productlist.html">
-                    <div class="categories">
-                        <h2>bukser</h2>
-                        <p>beskrivelse</p>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="productlist.html">
-                    <div class="categories">
-                        <h2>hoodies</h2>
-                        <p>beskrivelse</p>
-                    </div>
-                </a>
-            </div>
-            <div>
-                <a href="productlist.html">
-                    <div class="categories">
-                        <h2>bleer</h2>
-                        <p>beskrivelse</p>
-                    </div>
-                </a>
-            </div>
-        </div>
+            </article>
+        </template>
     </main>
-    <footer>
-        <p>&copy; 2023 matildemona</p>
+    <!--
+                <article class="smallProduct">
+                <a href="productlist.html">
+                    <div class="categories">
+                        <h2>CATEGORY</h2>
+                    </div>
+                </a>
+            </article>
+-->
 
+    <footer>
+        <p>
+            the data (images, text etc) comes from:
+        </p>
+        <a
+            href="https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset">https://www.kaggle.com/paramaggarwal/fashion-product-images-dataset</a>
     </footer>
+    <script src="js/category.js"></script>
 </body>
 
 </html>

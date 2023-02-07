@@ -1,3 +1,6 @@
+//const urlParams = new URLSearchParams(window.location.search);
+//const id = urlParams.get("id");
+
 fetch("https://kea-alt-del.dk/t7/api/products")
   .then((res) => res.json())
   .then((data) => showProducts(data));
@@ -23,6 +26,7 @@ function showProduct(product) {
   //SOLDOUT
   if (product.soldout) {
     copy.querySelector("article").classList.add("soldout");
+    copy.querySelector("article").classList.add("opacity");
   }
   //DISCOUNT
   if (product.discount) {
@@ -30,6 +34,11 @@ function showProduct(product) {
     copy.querySelector(".discountprocent").textContent = product.discount + " %";
     copy.querySelector(".showDiscount").classList.add("discountp");
   }
+  //ændre id værdi
+
+  //ÆNDRE!!
+  copy.querySelector("a").setAttribute("href", `product.html?id=${product.id}`);
+
   //ændre discount text
   //Append til DOM
   document.querySelector("main").appendChild(copy);
